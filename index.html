@@ -100,6 +100,14 @@ footer{padding:26px 0 60px;color:var(--mute);font-size:13px;text-align:center}
   .fase{padding:20px 14px}
   .extras{padding:14px 12px 4px}
   .extras ul{padding-left:18px}
+  th{letter-spacing:.05em}
+  td{overflow-wrap:anywhere}
+  .diag-t tr:first-child{display:none}
+  .diag-t tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
+  .diag-t td{display:block;border:none;padding:2px 0}
+  .diag-t td.num{font-size:12px;font-weight:600;color:var(--cyan)}
+  .diag-t td.num::before{content:"Dónde: ";color:var(--mute);font-weight:400}
+  .diag-t td:last-child{color:var(--mute);font-size:15px}
 }
 
 @media print{
@@ -191,7 +199,7 @@ footer{padding:26px 0 60px;color:var(--mute);font-size:13px;text-align:center}
         <p class="mute" style="font-size:15px">Las marcas: <b>H</b> = la versión de Hostinger (la que hiciste con IA) · <b>W</b> = baniagarcia.com</p>
       </div>
     </div>
-    <table>
+    <table class="diag-t">
       <tr><th style="width:44%">Qué pasa</th><th style="width:8%">Dónde</th><th>Por qué importa</th></tr>
       <tr><td>El <b>menú del celular</b> se abre sin fondo y queda encimado sobre el texto.</td><td class="num">H</td><td>Quien entra desde el celular, que es casi todo el mundo, no encuentra cómo contactarte.</td></tr>
       <tr><td>La página <b>Referente Interno no tiene título principal</b>; solo un subtítulo.</td><td class="num">H</td><td>Es tu página más importante, y el título principal es lo primero que Google lee para saber de qué trata.</td></tr>
