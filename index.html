@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Cotización · Sitio de Bania García · Vonoa</title>
-<meta name="description" content="Propuesta de Vonoa para el sitio de Bania García Benítez: diagnóstico de las dos versiones, alcance, precio y tiempos.">
+<meta name="description" content="Propuesta de Vonoa para el sitio de Bania García Benítez: qué incluye, precio y tiempos.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Cotización · Sitio de Bania García">
-<meta property="og:description" content="Diagnóstico, alcance, tiempos y precio de arranque si empezamos esta semana. Folio VW-0510-BG01 · Vonoa">
+<meta property="og:description" content="Tu propuesta en un minuto: qué incluye, precio de arranque y tiempos. Folio VW-0510-BG01 · Vonoa">
 <meta property="og:image" content="https://vonoaweb.github.io/bania-garcia-cotizacion/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -23,126 +23,104 @@
   --ink:#EAF0FF; --mute:#A9B6D6;
   --cyan:#2EE9B9; --blue:#1CA0F4;
   --grad:linear-gradient(135deg,#2EE9B9,#1CA0F4);
-  --amber:#fdc034;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--space);color:var(--ink);
-  font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.65;}
-.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+  font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.6;}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
 h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.2;margin:0}
 a{color:var(--cyan)}
+.g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-header{padding:56px 0 40px;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:12px;margin-bottom:34px}
-.brand svg{width:34px;height:34px}
+header{padding:52px 0 36px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:30px}
+.brand svg{width:32px;height:32px}
 .wm{font-family:Sora;font-weight:800;letter-spacing:.14em;font-size:13px}
-.wm em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .folio{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:14px}
-h1{font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:-.02em}
-h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{color:var(--mute);margin-top:16px;max-width:62ch}
+h1{font-size:clamp(28px,5.4vw,42px);font-weight:800;letter-spacing:-.02em}
+.sub{color:var(--mute);margin:14px 0 0}
 
-section{padding:46px 0;border-bottom:1px solid var(--line)}
-h2{font-size:clamp(21px,3.4vw,28px);font-weight:700;margin-bottom:8px}
+section{padding:40px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(21px,3.4vw,27px);font-weight:700;margin-bottom:6px}
 .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);font-weight:700;margin-bottom:10px;font-family:Sora}
-p{margin:14px 0}
+p{margin:12px 0}
 .mute{color:var(--mute)}
 
-.fase{border:1px solid var(--line);border-radius:14px;padding:26px;margin:20px 0;background:var(--space2)}
-.fase.now{border-color:var(--cyan);box-shadow:0 0 0 1px rgba(46,233,185,.25)}
-.fase h3{font-size:20px;font-weight:700;margin-bottom:4px}
-.tag{display:inline-block;font-family:Sora;font-size:11px;font-weight:700;letter-spacing:.1em;
-  text-transform:uppercase;padding:4px 10px;border-radius:99px;margin-bottom:12px}
-.tag.a{background:var(--grad);color:#04121f}
-.precio{font-family:Sora;font-size:30px;font-weight:800;margin:16px 0 4px}
-.precio small{display:block;font-size:13px;font-weight:400;color:var(--mute);font-family:"DM Sans";margin-top:6px}
-ul{margin:14px 0;padding-left:20px}
-li{margin:9px 0}
-li::marker{color:var(--cyan)}
-
-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:16px}
-th,td{text-align:left;padding:13px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-family:Sora;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);font-weight:600}
-td.num{font-family:Sora;font-weight:700;white-space:nowrap}
-td.r{text-align:right}
-tr.total td{border-top:2px solid var(--cyan);border-bottom:none;font-family:Sora;font-weight:800;font-size:18px}
-tr.desc td{color:var(--cyan)}
-.antes{font-size:20px;font-weight:600;color:var(--mute);text-decoration:line-through;margin-right:8px}
-.extras{border:1px dashed rgba(46,233,185,.45);border-radius:12px;padding:16px 20px 6px;margin:18px 0}
-.extras-t{font-family:Sora;font-weight:700;font-size:15px;color:var(--cyan)}
-.extras ul{margin:10px 0}
-
-.nota{border-left:3px solid var(--amber);background:rgba(253,192,52,.07);
-  padding:18px 20px;border-radius:0 10px 10px 0;margin:22px 0}
-.nota b{color:var(--amber)}
-.check{border-left:3px solid var(--cyan);background:rgba(46,233,185,.06);
-  padding:18px 20px;border-radius:0 10px 10px 0;margin:22px 0}
-
-.diag{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:start;margin-top:22px}
-.diag figure{margin:0}
-.diag img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}
-.diag figcaption{font-size:13px;color:var(--mute);margin-top:10px;line-height:1.5}
-.pages{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px;padding:0;list-style:none}
-.pages li{margin:0;font-family:Sora;font-size:13px;font-weight:600;padding:7px 13px;border-radius:99px;
+.pages{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.pages li{font-family:Sora;font-size:13px;font-weight:600;padding:7px 13px;border-radius:99px;
   border:1px solid var(--line);background:var(--space2)}
-.pages li::marker{content:none}
+.pages li::before{content:"✓ ";color:var(--cyan)}
 
-.cta{padding:56px 0 70px;text-align:center}
+.checks{list-style:none;padding:0;margin:18px 0 0}
+.checks li{position:relative;padding-left:32px;margin:12px 0}
+.checks li::before{content:"✓";position:absolute;left:0;top:3px;width:20px;height:20px;border-radius:50%;
+  background:var(--grad);color:#04121f;font-size:12px;font-weight:800;line-height:20px;text-align:center}
+
+.card{border:1px solid var(--cyan);box-shadow:0 0 0 1px rgba(46,233,185,.25);border-radius:16px;
+  padding:28px;background:var(--space2);margin-top:18px}
+.tag{display:inline-block;font-family:Sora;font-size:11px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;padding:5px 11px;border-radius:99px;background:var(--grad);color:#04121f}
+.card h3{font-size:19px;font-weight:700;margin-top:14px}
+.precio{font-family:Sora;font-weight:800;font-size:44px;letter-spacing:-.02em;margin:10px 0 0;line-height:1.1}
+.precio .antes{font-size:22px;font-weight:600;color:var(--mute);text-decoration:line-through;margin-right:10px}
+.precio .mxn{font-size:18px;font-weight:700}
+.iva{font-size:14px;color:var(--mute);margin-top:6px}
+.ahorro{display:inline-block;margin-top:14px;font-family:Sora;font-weight:700;font-size:14px;color:var(--cyan);
+  border:1px solid rgba(46,233,185,.4);border-radius:99px;padding:6px 12px}
+.regalos{margin-top:22px;padding-top:18px;border-top:1px dashed rgba(46,233,185,.35)}
+.regalos-t{font-family:Sora;font-weight:700;font-size:15px}
+.regalos ul{list-style:none;padding:0;margin:10px 0 0}
+.regalos li{margin:9px 0;padding-left:28px;position:relative}
+.regalos li::before{content:"🎁";position:absolute;left:0;top:0}
+.pago{margin:22px 0 0;font-size:15px;color:var(--mute)}
+.pago b{color:var(--ink)}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.step{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--space2)}
+.step .n{font-family:Sora;font-weight:800;font-size:13px;color:#04121f;background:var(--grad);
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;margin-bottom:12px}
+.step h3{font-size:16px;margin-bottom:6px}
+.step p{margin:0;font-size:15px;color:var(--mute)}
+
+.fine{margin:26px 0 0;padding:0;list-style:none;font-size:14px;color:var(--mute)}
+.fine li{margin:6px 0}
+.fine li::before{content:"· ";color:var(--cyan)}
+
+.cta{padding:52px 0 64px;text-align:center}
 .btn{display:inline-block;background:var(--grad);color:#04121f;font-family:Sora;font-weight:700;
-  text-decoration:none;padding:15px 30px;border-radius:99px;margin-top:8px}
-.pdf{margin-top:20px;font-size:14px}
-footer{padding:26px 0 60px;color:var(--mute);font-size:13px;text-align:center}
+  text-decoration:none;padding:15px 32px;border-radius:99px;margin-top:10px}
+.pdf{margin-top:18px;font-size:14px}
+footer{padding:22px 0 56px;color:var(--mute);font-size:13px;text-align:center;border-top:1px solid var(--line)}
 
 @media (max-width:640px){
-  .diag{grid-template-columns:1fr}
-  .diag figure{max-width:260px;margin:0 auto}
-  th,td{padding:11px 6px;font-size:15px}
-  .fase{padding:20px 14px}
-  .extras{padding:14px 12px 4px}
-  .extras ul{padding-left:18px}
-  th{letter-spacing:.05em}
-  td{overflow-wrap:anywhere}
-  .diag-t tr:first-child{display:none}
-  .diag-t tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
-  .diag-t td{display:block;border:none;padding:2px 0}
-  .diag-t td.num{font-size:12px;font-weight:600;color:var(--cyan)}
-  .diag-t td.num::before{content:"Dónde: ";color:var(--mute);font-weight:400}
-  .diag-t td:last-child{color:var(--mute);font-size:15px}
+  .steps{grid-template-columns:1fr}
+  .card{padding:22px 16px}
+  .precio{font-size:38px}
 }
 
 @media print{
-  body{background:#fff;color:#111;font-size:10.5pt;line-height:1.55}
-  .fase{background:#fafafa;border-color:#ddd;break-inside:avoid;padding:18px 20px}
-  .kicker,h1 span,.wm em{color:#0a7 !important;-webkit-text-fill-color:#0a7}
-  .btn,.pdf{display:none}
-  header{padding:8px 0 20px}
-  .brand{margin-bottom:20px}
-  section{border-color:#ddd;padding:18px 0}
-  p{margin:9px 0}
-  li{margin:5px 0}
-  table{margin:12px 0;font-size:10pt}
-  th,td{padding:7px 8px}
-  .diag{grid-template-columns:150px 1fr;gap:20px;margin-top:12px}
-  .precio{font-size:24px;margin:10px 0 2px}
-  .nota,.check{padding:12px 16px;margin:14px 0}
-  .cta{padding:26px 0 10px}
-  footer{padding:14px 0 0}
-  h2{break-inside:avoid}
-  .mute,th,.precio small,.diag figcaption,.sub,.folio,footer{color:#555}
-  .nota{background:#fff8e6}
-  .nota b{color:#8a5a00}
-  .pages{break-inside:avoid}
-  .pages-label{break-after:avoid}
-  th,td{border-color:#ddd}
-  tr.total td{border-top-color:#0a7}
-  tr.desc td{color:#0a7}
-  .extras{border-color:#0a7;break-inside:avoid;padding:12px 16px 4px}
-  .extras-t{color:#0a7}
-  .antes{color:#777}
-  .pages li{background:#f4f6f8;border-color:#ddd}
-  .diag img{border-color:#ddd}
-  a{color:#0a7}
-  tr,.nota,.check,.diag figure{break-inside:avoid}
+  body{background:#fff;color:#111;font-size:10.5pt;line-height:1.5}
+  .g{color:#0a7 !important;-webkit-text-fill-color:#0a7}
+  .kicker{color:#0a7}
+  header{padding:6px 0 18px}
+  .brand{margin-bottom:18px}
+  section{border-color:#ddd;padding:16px 0}
+  .mute,.sub,.folio,.iva,.pago,.step p,.fine,footer{color:#555}
+  .pago b{color:#111}
+  .pages li,.step{background:#f4f6f8;border-color:#ddd}
+  .card{background:#fafafa;border-color:#0a7;box-shadow:none;break-inside:avoid;padding:18px 20px}
+  .precio{font-size:32px}
+  .ahorro{color:#0a7;border-color:#0a7}
+  .regalos{border-top-color:#0a7}
+  .step{break-inside:avoid;padding:12px 14px}
+  .steps{margin-top:12px}
+  .regalos{margin-top:14px;padding-top:12px}
+  .regalos li{margin:6px 0}
+  .pago{margin-top:14px}
+  .fine{margin-top:14px}
+  .fine li{margin:3px 0}
+  .cta{display:none}
+  footer{border-color:#ddd;padding:12px 0 0}
   h2,.kicker{break-after:avoid}
 }
 </style>
@@ -153,89 +131,24 @@ footer{padding:26px 0 60px;color:var(--mute);font-size:13px;text-align:center}
   <div class="wrap">
     <div class="brand">
       <svg viewBox="0 0 210 210" aria-hidden="true">
-        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stop-color="#2EE9B9"/><stop offset="1" stop-color="#1CA0F4"/></linearGradient></defs>
-        <path fill="url(#g)" fill-rule="evenodd" d="M 0 18 L 39 91 L 49 72 L 9 0 L 0 18 Z M 161 72 L 171 91 L 210 18 L 201 0 L 161 72 Z M 63 77 L 72 84 C 89 68 121 68 140 84 L 147 77 C 135 65 121 61 105 61 C 89 61 75 65 63 77 Z M 105 173 L 65 100 L 56 119 L 105 210 L 154 119 L 145 100 L 105 173 Z"/>
+        <path fill="url(#lg)" fill-rule="evenodd" d="M 0 18 L 39 91 L 49 72 L 9 0 L 0 18 Z M 161 72 L 171 91 L 210 18 L 201 0 L 161 72 Z M 63 77 L 72 84 C 89 68 121 68 140 84 L 147 77 C 135 65 121 61 105 61 C 89 61 75 65 63 77 Z M 105 173 L 65 100 L 56 119 L 105 210 L 154 119 L 145 100 L 105 173 Z"/>
       </svg>
-      <span class="wm">VONOA<em>WEB</em></span>
+      <span class="wm">VONOA<span class="g">WEB</span></span>
     </div>
-    <div class="folio">Folio VW-0510-BG01 · 5 de octubre de 2026 · Para Bania García Benítez</div>
-    <h1>Un solo sitio, <span>a la altura de Referente Interno</span></h1>
-    <p class="sub">Esto es lo que platicamos hoy por videollamada, puesto por escrito y con precio cerrado.
-    El contenido ya lo tienes tú; lo que cotizo es el diseño y toda la parte técnica.</p>
+    <div class="folio">Folio VW-0510-BG01 · Para Bania García Benítez</div>
+    <h1>Tu contenido ya está listo. <span class="g">Ahora, que se vea como tú.</span></h1>
+    <p class="sub">Tu propuesta, en un minuto de lectura.</p>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <div class="kicker">Lo que me dijiste</div>
-    <h2>El alcance sale de tus palabras, no de mi catálogo</h2>
-    <p>Lo repito aquí para que quede claro que hablamos de lo mismo:</p>
-    <ul>
-      <li>“Lo que necesito es <b>apoyo profesional para aterrizar el diseño visual</b>, que tenga coherencia con mi marca y que se vea realmente profesional.”</li>
-      <li>“<b>Formularios, contacto, versión móvil y toda la parte técnica</b>, además del diseño.”</li>
-      <li>“Ahí he avanzado sobre todo <b>el contenido, la estructura</b> y bastante de la idea de lo que quiero comunicar.”</li>
-    </ul>
-    <p>Y en la llamada: que el sitio tiene que <b>atraer a clientes de alto valor para Referente Interno</b>,
-    que son <b>unas ocho páginas</b>, que <b>las fotos finales se toman después</b> y que vas a empezar
-    a grabar un <b>podcast en Spotify</b>.</p>
-    <p>De ahí sale la forma del trabajo. No hay que inventar contenido ni estructura: eso ya está hecho, y bien hecho.
-    Hay que darle una imagen coherente con tu marca y resolver la parte técnica para que el sitio funcione de verdad,
-    sobre todo en el celular.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="kicker">Lo que encontré</div>
-    <h2>Revisé tus dos versiones, en computadora y en celular</h2>
-    <div class="diag">
-      <figure>
-        <img src="menu-movil.jpg" alt="Versión de Hostinger en celular con el menú abierto: las opciones quedan encimadas sobre el texto de la portada">
-        <figcaption>Tu versión de Hostinger en un celular, con el menú abierto. Las opciones quedan encima del texto y “Contacto” casi no se lee.</figcaption>
-      </figure>
-      <div>
-        <p style="margin-top:0">Esto es lo que hay que resolver, con dónde está cada cosa para que lo puedas comprobar:</p>
-        <p class="mute" style="font-size:15px">Las marcas: <b>H</b> = la versión de Hostinger (la que hiciste con IA) · <b>W</b> = baniagarcia.com</p>
-      </div>
-    </div>
-    <table class="diag-t">
-      <tr><th style="width:44%">Qué pasa</th><th style="width:8%">Dónde</th><th>Por qué importa</th></tr>
-      <tr><td>El <b>menú del celular</b> se abre sin fondo y queda encimado sobre el texto.</td><td class="num">H</td><td>Quien entra desde el celular, que es casi todo el mundo, no encuentra cómo contactarte.</td></tr>
-      <tr><td>La página <b>Referente Interno no tiene título principal</b>; solo un subtítulo.</td><td class="num">H</td><td>Es tu página más importante, y el título principal es lo primero que Google lee para saber de qué trata.</td></tr>
-      <tr><td><b>Texto verde sobre fondo verde</b> en Referente Interno.</td><td class="num">H</td><td>Cuesta leerlo, y a una persona con daltonismo casi no se le ve.</td></tr>
-      <tr><td>El sitio <b>le dice a Google que está en inglés</b>.</td><td class="num">H</td><td>Todo tu contenido está en español; así cuesta más que te encuentren aquí.</td></tr>
-      <tr><td>La portada se llama solo “Inicio”, <b>sin descripción ni imagen</b> para cuando compartes la liga.</td><td class="num">H</td><td>En Google y en WhatsApp tu sitio aparece sin tu nombre ni una frase que invite a entrar.</td></tr>
-      <tr><td>El teléfono de ejemplo del formulario es <b>de España</b> (+34 6XX XXX XXX).</td><td class="num">H</td><td>Es un detalle de plantilla, y es justo lo que hace que un sitio no se sienta tuyo.</td></tr>
-      <tr><td>El botón principal lleva a Acompañamiento 1:1 y <b>Referente Interno queda en segundo plano</b>.</td><td class="num">H</td><td>Si la meta es Referente Interno, la jerarquía de los botones va al revés. Lo definimos en el cuestionario.</td></tr>
-      <tr><td>La liga <b>“Email” del pie de página no lleva a ningún lado</b>.</td><td class="num">W</td><td>Quien quiera escribirte por correo, no puede.</td></tr>
-      <tr><td>El menú solo tiene Inicio, Libros y Agendar.</td><td class="num">W</td><td>No aparecen ni Contacto ni Referente Interno.</td></tr>
-    </table>
-    <div class="check">
-      <b>Lo que sí funciona y se queda:</b> tu agenda de Calendly en baniagarcia.com/agendar.
-      Nada de lo de arriba es falta de trabajo tuyo: así salen los constructores automáticos.
-      Por eso el contenido se respeta y lo que cambia es la ejecución.
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="kicker">Cómo lo trabajaría</div>
-    <h2>Un solo sitio, en tu dominio y en tu Hostinger</h2>
-    <ul>
-      <li><b>Queda un solo sitio en baniagarcia.com</b>, en el WordPress que ya tienes en Hostinger. Ya lo pagas,
-      el dominio ya apunta ahí, y te deja publicar en el blog y agregar libros y episodios sin depender de mí.</li>
-      <li><b>El contenido y la estructura salen de tu versión de Hostinger</b>, que es la más avanzada: las ocho páginas tal como las armaste.</li>
-      <li><b>Primero la portada, luego lo demás.</b> Diseño la portada con la línea visual completa —colores, tipografía,
-      botones y animación— y la revisas. Cuando te guste, esa misma línea se aplica a las otras siete páginas.
-      Así no rehacemos ocho páginas si algo del estilo no te convence.</li>
-      <li><b>Animación con calma:</b> entradas suaves al bajar por la página y transiciones que acompañan la lectura.
-      Nada que haga lento el sitio en el celular. El ritmo tiene que sentirse como tus sesiones: sin prisa.</li>
-      <li>Tu <b>Calendly se conserva</b> y queda a la mano en Acompañamiento 1:1 y en Contacto.</li>
-      <li>Al terminar, la versión de prueba (hostingersite.com) se da de baja, para que no haya dos copias de tu sitio compitiendo en Google.</li>
-    </ul>
-    <p class="mute pages-label" style="margin-bottom:0">Las ocho páginas:</p>
+    <div class="kicker">Lo que ya tienes</div>
+    <h2>Lo más difícil ya lo hiciste</h2>
+    <p>Tienes tu metodología, tus textos y la estructura de tu sitio. Eso es justo lo que a casi todos les falta.
+    Tus ocho páginas se quedan como las pensaste:</p>
     <ul class="pages">
       <li>Inicio</li><li>Acompañamiento 1:1</li><li>Referente Interno</li><li>Sobre mí</li>
       <li>Libros</li><li>Podcast</li><li>Blog</li><li>Contacto</li>
@@ -245,114 +158,76 @@ footer{padding:26px 0 60px;color:var(--mute);font-size:13px;text-align:center}
 
 <section>
   <div class="wrap">
-    <div class="kicker">Precio</div>
-    <h2>Si arrancamos esta semana, sale más barato</h2>
-    <div class="fase now">
-      <span class="tag a">Precio de arranque · hasta el viernes 9 de octubre</span>
-      <h3>Sitio completo de 8 páginas, al precio de 6</h3>
-      <div class="precio"><span class="antes">$8,900</span> $7,400 MXN
-        <small>IVA incluido · pago único. Es el precio publicado del plan Presencia Pro en vonoaweb.com/precios, pero con las ocho páginas.</small>
-      </div>
-      <table>
-        <tr><th>Concepto</th><th class="r">Importe</th></tr>
-        <tr><td>Plan Presencia Pro: hasta 6 páginas, animaciones, integración con redes y SEO técnico</td><td class="num r">$7,400</td></tr>
-        <tr><td>2 páginas adicionales para llegar a las 8 ($750 cada una)</td><td class="num r">$1,500</td></tr>
-        <tr class="desc"><td>Las 2 páginas adicionales van sin costo si arrancas esta semana</td><td class="num r">−$1,500</td></tr>
-        <tr class="total"><td>Total, IVA incluido</td><td class="r">$7,400</td></tr>
-      </table>
+    <div class="kicker">Lo que yo pongo</div>
+    <h2>El diseño y toda la parte técnica</h2>
+    <ul class="checks">
+      <li><b>Un diseño a la altura de tu marca</b>, con animaciones suaves y tranquilas, como tus sesiones.</li>
+      <li><b>Perfecto en el celular:</b> menú, botones y contacto que sí funcionan.</li>
+      <li><b>Formulario que llega a tu correo</b>, botón de WhatsApp y tu agenda de Calendly a la mano.</li>
+      <li><b>Que Google te encuentre:</b> títulos, descripciones y vista previa cuando compartes tu liga.</li>
+      <li><b>Blog, libros y podcast</b> que puedes actualizar sin depender de nadie.</li>
+      <li><b>Tres rondas de ajustes</b> para que quede exactamente como lo imaginas.</li>
+    </ul>
+    <p class="mute">Todo en baniagarcia.com, en tu Hostinger y a tu nombre.</p>
+  </div>
+</section>
 
-      <div class="extras">
-        <div class="extras-t">Y además, por arrancar esta semana, se suma:</div>
+<section>
+  <div class="wrap">
+    <div class="kicker">Tu inversión</div>
+    <h2>Si arrancamos esta semana, sale más barato</h2>
+    <div class="card">
+      <span class="tag">Precio de arranque · hasta el viernes 9 de octubre</span>
+      <h3>Sitio completo de 8 páginas</h3>
+      <div class="precio"><span class="antes">$8,900</span>$7,400 <span class="mxn">MXN</span></div>
+      <div class="iva">IVA incluido · pago único</div>
+      <div class="ahorro">Ahorras $1,500: las 2 páginas extra van por mi cuenta</div>
+
+      <div class="regalos">
+        <div class="regalos-t">Y de regalo, por arrancar esta semana:</div>
         <ul>
-          <li><b>Página de enlaces para tu Instagram</b> en baniagarcia.com/enlaces, con el diseño de tu sitio.
-          La liga de tu biografía lleva a una página tuya, no a un servicio genérico.</li>
-          <li><b>Tres plantillas en Canva con la línea visual del sitio:</b> publicación, historia y portada de
-          episodio del podcast. Así tus redes y tu sitio se ven como la misma marca desde el primer día.</li>
-          <li><b>Analítica desde el día uno:</b> Google Analytics configurado y un reporte a los 30 días con cuántas
-          personas entraron, de dónde llegaron y qué leyeron antes de agendar.</li>
-          <li><b>30 días de cambios menores sin costo</b> después de la entrega: un texto, una foto, un dato.</li>
+          <li>Página de enlaces para tu Instagram, con el diseño de tu sitio.</li>
+          <li>3 plantillas de Canva para tus redes y las portadas de tu podcast.</li>
+          <li>Reporte de visitas a los 30 días: cuántas personas llegaron y qué leyeron.</li>
+          <li>30 días de cambios menores sin costo después de publicar.</li>
         </ul>
       </div>
 
-      <p style="margin-bottom:0"><b>Forma de pago:</b> 50% para arrancar ($3,700) y 50% al entregar ($3,700).</p>
-    </div>
-    <div class="nota">
-      <b>El precio de arranque aplica si confirmas con el anticipo a más tardar el viernes 9 de octubre.</b>
-      Después, el sitio cuesta $8,900 y sin los extras. La razón es sencilla: esta semana puedo empezar de
-      inmediato y sostener la entrega en una semana, como te prometí.
+      <p class="pago"><b>$3,700 para empezar</b> y <b>$3,700 cuando tu sitio esté publicado.</b></p>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="kicker">Qué incluye y qué no</div>
-    <h2>Sin letras chiquitas</h2>
-    <table>
-      <tr><th style="width:24%">Concepto</th><th>Cómo queda</th></tr>
-      <tr><td class="num">Incluido</td><td>Diseño visual completo y coherente con tu marca, en las ocho páginas, revisadas en celular y en computadora.</td></tr>
-      <tr><td class="num">Incluido</td><td>Todo lo de la lista de “Lo que encontré”, resuelto.</td></tr>
-      <tr><td class="num">Incluido</td><td><b>Formulario de contacto que llega a tu correo</b>, probado antes de entregar, y botón de WhatsApp.</td></tr>
-      <tr><td class="num">Incluido</td><td>SEO técnico: un título principal por página, título y descripción para Google en cada una, imagen para cuando compartas la liga, sitio declarado en español y alta en Google Search Console.</td></tr>
-      <tr><td class="num">Incluido</td><td><b>Tres rondas de ajustes</b>, como quedamos en la llamada.</td></tr>
-      <tr><td class="num">Incluido</td><td><b>Cambio a tus fotos finales</b> cuando hagas la sesión: una vez, sin costo, dentro de los 60 días siguientes a la entrega. Mientras tanto, el sitio sale con las fotos que ya tienes.</td></tr>
-      <tr><td class="num">Incluido</td><td><b>Sección de Podcast</b> lista desde el principio. La conecto a tu programa de Spotify cuando subas el primer episodio, dentro de esos mismos 60 días.</td></tr>
-      <tr><td class="num">Incluido</td><td>Una videollamada de 30 minutos para enseñarte a publicar en el blog y a agregar libros y episodios.</td></tr>
-      <tr><td class="num">Lo pones tú</td><td><b>Hosting y dominio:</b> ya los tienes en Hostinger y se quedan a tu nombre. Me das un usuario propio para trabajar; no necesito tu contraseña.</td></tr>
-      <tr><td class="num">Lo pones tú</td><td>Textos (ya los tienes), fotos, portadas de tus libros, y logo y colores si ya los tienes definidos.</td></tr>
-      <tr><td class="num">No incluido</td><td>Redacción de textos nuevos, la sesión de fotos y la grabación o edición del podcast.</td></tr>
-      <tr><td class="num">No incluido</td><td>Venta de libros con pago dentro del sitio. Si tus libros se venden en Amazon u otra tienda, el botón lleva directo ahí, y eso sí va incluido.</td></tr>
-    </table>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="kicker">Tiempos</div>
-    <h2>Una semana, contada desde que tengo el material</h2>
-    <table>
-      <tr><th style="width:20%">Cuándo</th><th>Qué</th></tr>
-      <tr><td class="num">Días 1 y 2</td><td>Portada con la línea visual completa → <b>tu primera revisión</b>.</td></tr>
-      <tr><td class="num">Días 3 a 5</td><td>Las otras siete páginas, con formulario, Calendly y SEO → <b>segunda revisión</b>.</td></tr>
-      <tr><td class="num">Días 6 y 7</td><td>Ajustes finales, pruebas en celular y publicación en baniagarcia.com → <b>tercera revisión y entrega</b>.</td></tr>
-    </table>
-    <div class="nota">
-      <b>La semana empieza cuando tengo anticipo, cuestionario y material.</b>
-      Cada revisión espera tu respuesta: si una tarda dos días, la entrega se mueve dos días.
-      Con el grupo de WhatsApp que acordamos, eso se resuelve rápido.
+    <div class="kicker">Cómo seguimos</div>
+    <h2>Tu sitio publicado en una semana</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Confirmas</h3><p>Me escribes por WhatsApp y das el anticipo.</p></div>
+      <div class="step"><div class="n">2</div><h3>Me pasas tu material</h3><p>Un cuestionario corto y el acceso a tu Hostinger.</p></div>
+      <div class="step"><div class="n">3</div><h3>En 7 días, publicado</h3><p>Con tus tres revisiones en el camino.</p></div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="kicker">Para arrancar</div>
-    <h2>Lo que necesito de tu lado</h2>
-    <table>
-      <tr><th style="width:20%">Quién</th><th>Qué</th></tr>
-      <tr><td class="num">Bania</td><td>Responder el <b>cuestionario</b> que te mando: tu marca, sitios que te gusten como referencia, el mapa de páginas y cuándo planeas la sesión de fotos.</td></tr>
-      <tr><td class="num">Bania</td><td>Decirme <b>qué te gusta de cada una de tus dos versiones</b>, en lo visual.</td></tr>
-      <tr><td class="num">Bania</td><td>El <b>acceso</b> a WordPress y a Hostinger, y el <b>anticipo de $3,700</b>, a más tardar el viernes 9 de octubre para el precio de arranque.</td></tr>
-      <tr><td class="num">Vonoa</td><td>Abrir el <b>grupo de WhatsApp</b> y darte <b>fecha de entrega con día</b> en cuanto tenga lo de arriba.</td></tr>
-    </table>
+    <ul class="fine">
+      <li>Los 7 días cuentan desde que tengo tu material.</li>
+      <li>Cuando tengas tus fotos nuevas y el primer episodio del podcast, los integro sin costo (dentro de 60 días).</li>
+      <li>No incluye redacción de textos nuevos, sesión de fotos ni edición del podcast.</li>
+      <li>Después del viernes 9 de octubre, el precio es de $8,900, sin regalos.</li>
+    </ul>
   </div>
 </section>
 
 <div class="cta">
   <div class="wrap">
-    <h2>¿Arrancamos esta semana?</h2>
-    <p class="mute">Contéstame por WhatsApp y te mando el cuestionario y los datos para el anticipo.<br>
-    <b>$7,400 con los extras, si confirmamos a más tardar el viernes 9 de octubre.</b></p>
-    <a class="btn" href="https://wa.me/5215644645574">Contestar por WhatsApp</a>
-    <p class="pdf"><a href="Cotizacion-VW-0510-BG01-Vonoa.pdf" download>Descargar esta cotización en PDF</a></p>
+    <h2>¿Arrancamos?</h2>
+    <a class="btn" href="https://wa.me/5215644645574">Sí, quiero empezar</a>
+    <p class="pdf"><a href="Cotizacion-VW-0510-BG01-Vonoa.pdf" download>Descargar en PDF</a></p>
   </div>
 </div>
 
 <footer>
   <div class="wrap">
     Vonoa · Fernando González · Guadalajara, Jalisco · <a href="https://vonoaweb.com">vonoaweb.com</a><br>
-    Folio VW-0510-BG01 · Precio de arranque ($7,400 con extras) válido hasta el viernes 9 de octubre de 2026.
-    Precio regular ($8,900) vigente 30 días a partir del 5 de octubre de 2026.
+    Folio VW-0510-BG01 · 5 de octubre de 2026
   </div>
 </footer>
 
