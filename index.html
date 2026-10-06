@@ -70,6 +70,17 @@ p{margin:12px 0}
 .pago{margin:22px 0 0;font-size:15px;color:var(--mute)}
 .pago b{color:var(--ink)}
 
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.wcard{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--space2)}
+.wcard .n{font-family:Sora;font-weight:800;font-size:13px;color:#04121f;background:var(--grad);
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;margin-bottom:12px}
+.wcard h3{font-size:17px;margin-bottom:8px}
+.wcard ul{margin:0;padding-left:18px;font-size:15px;color:var(--mute)}
+.wcard li{margin:7px 0}
+.wcard li::marker{color:var(--cyan)}
+.rondas{margin:18px 0 22px;padding:12px 16px;border-radius:12px;border:1px solid rgba(46,233,185,.4);
+  background:rgba(46,233,185,.06)}
+.rondas b{color:var(--cyan)}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
 .step{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--space2)}
 .step .n{font-family:Sora;font-weight:800;font-size:13px;color:#04121f;background:var(--grad);
@@ -88,14 +99,14 @@ p{margin:12px 0}
 footer{padding:22px 0 56px;color:var(--mute);font-size:13px;text-align:center;border-top:1px solid var(--line)}
 
 @media (max-width:640px){
-  .steps{grid-template-columns:1fr}
+  .steps,.work{grid-template-columns:1fr}
   .card{padding:22px 16px}
   .precio{font-size:38px}
 }
 
 @media print{
   body{background:#fff;color:#111;font-size:10.5pt;line-height:1.5}
-  .g{color:#0a7 !important;-webkit-text-fill-color:#0a7}
+  .g{background:none !important;color:#0a7 !important;-webkit-text-fill-color:#0a7}
   .kicker{color:#0a7}
   header{padding:6px 0 18px}
   .brand{margin-bottom:18px}
@@ -107,6 +118,11 @@ footer{padding:22px 0 56px;color:var(--mute);font-size:13px;text-align:center;bo
   .precio{font-size:32px}
   .ahorro{color:#0a7;border-color:#0a7}
   .step{break-inside:avoid;padding:12px 14px}
+  .wcard{background:#f4f6f8;border-color:#ddd;break-inside:avoid;padding:12px 14px}
+  .wcard ul{color:#444;font-size:9.5pt}
+  .work{margin-top:12px}
+  .rondas{background:#effaf6;border-color:#0a7;margin:12px 0 14px}
+  .rondas b{color:#0a7}
   .steps{margin-top:12px}
   .pago{margin-top:14px}
   .fine{margin-top:14px}
@@ -130,37 +146,50 @@ footer{padding:22px 0 56px;color:var(--mute);font-size:13px;text-align:center;bo
       <span class="wm">VONOA<span class="g">WEB</span></span>
     </div>
     <div class="folio">Folio VW-0510-BG01 · Para Bania García Benítez</div>
-    <h1>Tu contenido ya está listo. <span class="g">Ahora, que se vea como tú.</span></h1>
-    <p class="sub">Tu propuesta, en un minuto de lectura.</p>
+    <h1>Tu sitio profesional, <span class="g">diseñado y construido de principio a fin.</span></h1>
+    <p class="sub">Ocho páginas en baniagarcia.com, a la altura de Referente Interno y listas en una semana.</p>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <div class="kicker">Lo que ya tienes</div>
-    <h2>Lo más difícil ya lo hiciste</h2>
-    <p>Tienes tu metodología, tus textos y la estructura de tu sitio. Eso es justo lo que a casi todos les falta.
-    Tus ocho páginas se quedan como las pensaste:</p>
+    <div class="kicker">Lo que incluye</div>
+    <h2>Tú pones tus textos y fotos. Yo hago todo lo demás.</h2>
+    <div class="work">
+      <div class="wcard">
+        <div class="n">1</div>
+        <h3>Diseño</h3>
+        <ul>
+          <li>Línea visual de tu marca: colores, tipografías y botones.</li>
+          <li>Diseño de las 8 páginas, para computadora y celular.</li>
+          <li>Animaciones suaves al recorrer el sitio.</li>
+        </ul>
+      </div>
+      <div class="wcard">
+        <div class="n">2</div>
+        <h3>Desarrollo</h3>
+        <ul>
+          <li>Construcción de las 8 páginas en tu WordPress.</li>
+          <li>Formulario a tu correo, WhatsApp y tu agenda de Calendly.</li>
+          <li>Blog, libros y podcast que actualizas sin depender de nadie.</li>
+        </ul>
+      </div>
+      <div class="wcard">
+        <div class="n">3</div>
+        <h3>Lanzamiento</h3>
+        <ul>
+          <li>SEO: que Google entienda y muestre cada página.</li>
+          <li>Vista previa con tu imagen al compartir tu liga.</li>
+          <li>Pruebas, publicación y 30 minutos de capacitación.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="rondas"><b>+ 3 rondas de ajustes</b> para que quede exactamente como lo imaginas.</p>
+    <p class="mute" style="margin-bottom:0">Las 8 páginas:</p>
     <ul class="pages">
       <li>Inicio</li><li>Acompañamiento 1:1</li><li>Referente Interno</li><li>Sobre mí</li>
       <li>Libros</li><li>Podcast</li><li>Blog</li><li>Contacto</li>
     </ul>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="kicker">Lo que yo pongo</div>
-    <h2>El diseño y toda la parte técnica</h2>
-    <ul class="checks">
-      <li><b>Un diseño a la altura de tu marca</b>, con animaciones suaves y tranquilas, como tus sesiones.</li>
-      <li><b>Perfecto en el celular:</b> menú, botones y contacto que sí funcionan.</li>
-      <li><b>Formulario que llega a tu correo</b>, botón de WhatsApp y tu agenda de Calendly a la mano.</li>
-      <li><b>Que Google te encuentre:</b> títulos, descripciones y vista previa cuando compartes tu liga.</li>
-      <li><b>Blog, libros y podcast</b> que puedes actualizar sin depender de nadie.</li>
-      <li><b>Tres rondas de ajustes</b> para que quede exactamente como lo imaginas.</li>
-    </ul>
-    <p class="mute">Todo en baniagarcia.com, en tu Hostinger y a tu nombre.</p>
   </div>
 </section>
 
